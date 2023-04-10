@@ -121,6 +121,11 @@
         </td>
       </tr>
       <tr>
+        <td colspan="2">
+          <label>  آدرس ساب : <input type="text" dir="ltr" id="Link" placeholder="https://*.*.workers.dev/sub" /></label>
+        </td>
+      </tr>
+      <tr>
         <td>
           <a href="ip-list.html" target="_blank">مشاهده‌ی رنج‌ها</a>
         </td>
@@ -2315,7 +2320,7 @@ async function testIPs(ipList) {
       const tableRows = sortedArr.map(obj => `
         <tr>
           <td></td>
-          <td>${obj.ip}</td>
+          <td>${obj.Link}{obj.ip}</td>
           <td>${obj.latency}ms</td>
           <td>
             <img height="16px" src="assets/copy.png" onclick="copyToClipboard('${obj.ip}')"/>
