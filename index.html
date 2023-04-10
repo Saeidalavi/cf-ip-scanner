@@ -2320,7 +2320,7 @@ async function testIPs(ipList) {
       const tableRows = sortedArr.map(obj => `
         <tr>
           <td></td>
-          <td>${obj.Link}{obj.ip}</td>
+          <td>${obj.ip}</td>
           <td>${obj.latency}ms</td>
           <td>
             <img height="16px" src="assets/copy.png" onclick="copyToClipboard('${obj.ip}')"/>
